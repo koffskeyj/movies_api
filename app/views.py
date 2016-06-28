@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
 from app.serializers import MovieSerializer, RaterSerializer, RatingSerializer
+from app.models import Movie, Rater, Rating
 
 import json
 

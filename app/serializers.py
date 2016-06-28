@@ -8,7 +8,7 @@ class MovieSerializer(serializers.ModelSerializer):
         fields = ["movie_title", "release_date", "video_release_date", "URL", "unknown",
         "Action", "Adventure", "Animation", "Childrens", "Comedy", "Crime", "Documentary",
         "Drama", "Fantasy", "Film_Noir", "Horror", "Musical", "Mystery", "Romance", "Sci_Fi",
-        "Thirller", "War", "Western"]
+        "Thriller", "War", "Western"]
 
 
 class RaterSerializer(serializers.ModelSerializer):
