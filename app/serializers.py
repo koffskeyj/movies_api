@@ -20,6 +20,16 @@ class RaterSerializer(serializers.ModelSerializer):
 
 class RatingSerializer(serializers.ModelSerializer):
 
+    user_id = serializers.HyperlinkedRelatedField(
+    read_only=True,
+    view_name="rater_detail_api_view"
+    )
+
+    item_id = serializers.HyperlinkedRelatedField(
+    read_only=True,
+    view_name="movie_detail_api_view"
+    )
+
     class Meta:
         model = Rating
         fields = ["user_id", "item_id", "rating", "time_stamp"]

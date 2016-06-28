@@ -32,5 +32,5 @@ class RatingListAPIView(generics.ListCreateAPIView):
 
 
 class RatingDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
-        queryset = Rating.objects.all()
-        serializer_class = RatingSerializer
+    queryset = Rating.objects.all()
+    serializer_class = RatingSerializer
